@@ -1,0 +1,60 @@
+1- Crear carpeta en www o en mi carpeta del servidor.
+
+------------------ NOTA DE SERVIDOR ----------------------
+    apache2 
+    sirve para interpretar php
+    Un dominio se crea apartir de una ip pero no es tan sensillo nesecitamos una DNS, lo que nosotros tenemos el un dominio local 
+
+2- Crear el index.php   --> para simplificar algunas cosas
+
+3- Agregar dependecias y crear header.php y footer.php  
+
+4- Include de eader y de footer eb index.php
+
+5- Agregar tabla html en index.php
+
+6- Crear base de datos y tabla sql 
+    bd -> webconexion1
+    table -> t_nombre -> id, nombre
+
+7- Crear la conexion de php a mysql con un archivo conexion.php
+
+8- Agregar conecion.php en el index y crear query de select para la tabla t_nombre y ejecutarlo
+
+9- Iterar resultado de ejecucion con un while sobre la tabla html y duplicar los tr
+
+------------------------------------------------------------------------------------------------------------------------------------------
+PHP & Mysql
+
+1- Insertar datos de php a mysql
+    1° Agregar enlace en index.php, para la pagina de agregado
+
+    2° Crear vista de agregar.php y agregar el formulario correspondiente
+
+    3° Crear una carpeta que se llame servidor o bacckend, y en esa carpeta crear el archivo de servidor agregar.php y agregar al action del formulario 
+    de la vista agregar
+
+    4° Agregar codigo de insercion en el archivo de servidor agregar.php, agregar conexion, agregar query y ejecutarlo
+
+2- Eliminar un registro
+    1° Crear el elnace o ancore de elimina en la tabla de index.php
+
+    2° Crear rl archivo de sercidor eliminar.php 
+    
+    3° Agregar parametro de id por url al ancore de eliminar.php
+
+    4° obtener por id que mande por url en el archivo de servidor eliminar.php
+
+    5° Agregar conexion en el archivo de seridor eliminar, crear wuery de eliminar, ejecutarlo y redireccionarlo
+
+---------------------------------------------------------------------------------------------------------------------------------------------------   
+Editar
+    1- Copiar el link de eliminar para su posterior modificacion 
+
+    2- Modificar el link con el texto editar, crear el archivp editar php como vista y modificar el link o ancore para que vaya a editar.php
+
+    3- crear el diseño de vista de editar.php y crear archivo de backend actualizar.php para colocarlo en el formuario de editar.php
+
+    4- obtener por medio de get el id en el archio de vista editar.php hacer una consulta a la tabla y cargar los datos en el formulario 
+
+    5- otener por medio de post en el archivo del servidor actualizar.php los datos del nombre actualizar.php, el id y hacer su query de update
